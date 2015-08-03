@@ -11,7 +11,7 @@ import com.example.yami.unirverslivev0.R;
  * Created by Yami on 7/31/2015.
  */
 public class CameraActivity extends Activity {
-
+//test
     private Camera mCamera;
     private StreamPreview mPreview;
 
