@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:background="@drawable/background_material">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:src="@drawable/profile"
+            app:border_color="#FF000000"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manaa Aziz"
+            android:textSize="14sp"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:paddingBottom="4dp"
+            android:id="@+id/username"
+            android:layout_above="@+id/email"
+            android:layout_alignLeft="@+id/profile_image"
+            android:layout_alignStart="@+id/profile_image"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manaa.Aziz@gmail.com"
+            android:id="@+id/email"
+            android:gravity="left"
+            android:layout_marginBottom="8dp"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/username"
+            android:layout_alignStart="@+id/username"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:background="#3f4493ff"
+        android:clickable="false" />
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:typeface="sans"/>
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+</LinearLayout>

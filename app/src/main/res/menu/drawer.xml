@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Home"
+            android:checked="false"
+            android:icon="@drawable/ic_inbox_black"
+            android:title="@string/Home" />
+        <item
+            android:id="@+id/Diffusionlive"
+            android:checked="false"
+            android:icon="@drawable/ic_inbox_black"
+            android:title="@string/diffusionlive" />
+
+        <item
+            android:id="@+id/mesvideo"
+            android:checked="false"
+            android:icon="@drawable/ic_star_black"
+            android:title="@string/mesvideo" />
+
+        <item
+            android:id="@+id/decouvrir"
+            android:checked="false"
+            android:icon="@drawable/ic_send_black"
+            android:title="@string/decouvrir" />
+
+        <item
+            android:id="@+id/monprofil"
+            android:checked="false"
+            android:icon="@drawable/ic_drafts_black"
+            android:title="@string/monprofil" />
+
+
+        <item
+            android:id="@+id/feedback"
+            android:checked="false"
+            android:icon="@drawable/ic_email_black"
+            android:title="@string/feedback" />
+        <item
+            android:id="@+id/Logout"
+            android:checked="false"
+            android:icon="@drawable/ic_delete_black"
+            android:title="@string/Logout" />
+
+    </group>
+</menu>

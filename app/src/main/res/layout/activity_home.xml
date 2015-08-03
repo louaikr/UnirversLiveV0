@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo_univers_live"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Invité à Regarder Live?"
+        android:id="@+id/txthome"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#fffefdff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/txthome"
+        android:layout_alignStart="@+id/txthome"
+        android:layout_marginTop="75dp"
+        android:layout_alignEnd="@+id/txthome"
+        android:background="@drawable/backwithborder"
+        android:hint="  Entrer Code Chaine"
+        android:textColor="#ffffffff"
+        android:textColorHint="#FFFFFF"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnlogin"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/editText3"
+        android:layout_alignStart="@+id/editText3"
+        android:background="@drawable/backwithborder"
+        android:textColor="#ffffffff"
+        android:onClick="movingToLogin"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/btnSignup"
+        android:layout_alignTop="@+id/btnlogin"
+        android:layout_alignEnd="@+id/editText3"
+        android:background="@drawable/backwithborder"
+        android:textColor="#ffffffff" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/btnok"
+        android:background="#fffdfffb"
+        android:layout_above="@+id/btnlogin"
+        android:layout_alignEnd="@+id/editText3"
+        />
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:fillViewport="true"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo_univers_live"
+            android:layout_below="@+id/titrelogin"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="LOGIN"
+            android:id="@+id/titrelogin"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton"
+            android:src="@drawable/connect_fb"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/imageView"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Ou entrer vos information"
+            android:id="@+id/textView"
+            android:layout_marginTop="42dp"
+            android:layout_below="@+id/imageButton"
+            android:layout_alignEnd="@+id/btnlogin" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="39dp"
+            android:hint="  Adresse mail"
+            android:background="#fffffbff"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:layout_marginTop="32dp"
+            android:hint="  Mot de passe"
+
+            android:layout_below="@+id/editText"
+            android:layout_alignStart="@+id/editText"
+            android:background="#fffffbff"
+            android:layout_alignEnd="@+id/editText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Mot de passe oublié!"
+            android:id="@+id/txtpasse"
+            android:textColor="#ff000000"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/editText2"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Se Connecter"
+            android:id="@+id/btnlogin"
+            android:textSize="20sp"
+            android:layout_marginTop="38dp"
+            android:background="#ffff1712"
+            android:textColor="#fff8f4ff"
+            android:onClick="movingToHome"
+            android:layout_below="@+id/txtpasse"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
