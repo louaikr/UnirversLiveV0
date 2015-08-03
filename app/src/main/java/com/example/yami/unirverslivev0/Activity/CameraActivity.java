@@ -1,5 +1,5 @@
 package com.example.yami.unirverslivev0.Activity;
-
+/* fak u homie  */
 import android.app.Activity;
 import android.hardware.Camera;
 import android.os.Bundle;
