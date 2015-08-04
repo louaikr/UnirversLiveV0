@@ -1,6 +1,7 @@
 package com.example.yami.unirverslivev0.Activity;
 
 import android.content.Context;
+
 import android.hardware.Camera;
 import android.util.FloatMath;
 import android.util.Log;
@@ -18,7 +19,8 @@ public class StreamPreview  extends SurfaceView implements SurfaceHolder.Callbac
     private static final String TAG ="error" ;
     private SurfaceHolder mHolder;
     private Camera mCamera;
-    private  float mDist;
+    private float mDist;
+
     public StreamPreview(Context context, Camera camera) {
         super(context);
         mCamera = camera;
