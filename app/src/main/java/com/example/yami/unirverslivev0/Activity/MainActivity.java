@@ -21,6 +21,7 @@ import com.example.yami.unirverslivev0.Fragments.HomeContentFragment;
 import com.example.yami.unirverslivev0.Fragments.MesVideoContentFragment;
 import com.example.yami.unirverslivev0.MapsActivity;
 import com.example.yami.unirverslivev0.R;
+import com.jmolsmobile.landscapevideocapture.VideoCaptureActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                     //Replacing the main content with MesVideoContentFragment Which is our Inbox View;
                     case R.id.Diffusionlive:
 
-                        Intent cam = new Intent(MainActivity.this,CameraActivity.class);
+                        Intent cam = new Intent(MainActivity.this,VideoCaptureActivity.class);
                         startActivity(cam);
 
                         return true;
