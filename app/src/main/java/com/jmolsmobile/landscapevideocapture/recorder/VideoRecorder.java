@@ -43,6 +43,8 @@ public class VideoRecorder implements OnInfoListener, CapturePreviewInterface {
     private final CaptureConfiguration mCaptureConfiguration;
     private final VideoFile            mVideoFile;
 
+
+
     private MediaRecorder mRecorder;
     private boolean mRecording = false;
     private final VideoRecorderInterface mRecorderInterface;
@@ -66,6 +68,7 @@ public class VideoRecorder implements OnInfoListener, CapturePreviewInterface {
             mRecorderInterface.onRecordingFailed(e.getMessage());
             return;
         }
+
 
         mVideoCapturePreview = new CapturePreview(this, mCameraWrapper, previewHolder);
     }

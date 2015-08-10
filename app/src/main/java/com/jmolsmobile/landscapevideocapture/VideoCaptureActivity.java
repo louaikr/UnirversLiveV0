@@ -17,13 +17,16 @@
 package com.jmolsmobile.landscapevideocapture;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
 import android.os.Bundle;
 import android.provider.MediaStore.Video.Thumbnails;
+import android.support.v7.app.AlertDialog;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.yami.unirverslivev0.R;
@@ -66,6 +69,31 @@ public class VideoCaptureActivity extends Activity implements RecordingButtonInt
 		if (mVideoCaptureView == null) return; // Wrong orientation
 
 		initializeRecordingUI();
+
+		AlertDialog.Builder alert = new AlertDialog.Builder(this);
+
+		alert.setTitle("what's happening now");
+		alert.setMessage("Enter streaming title");
+
+// Set an EditText view to get user input
+		final EditText input = new EditText(this);
+		alert.setView(input);
+
+		alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int whichButton) {
+				String value = input.getText().toString();
+				Toast.makeText(getApplicationContext(), value, Toast.LENGTH_SHORT).show();
+
+			}
+		});
+
+		alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+			public void onClick(DialogInterface dialog, int whichButton) {
+				// Canceled.
+			}
+		});
+
+		alert.show();
 	}
 
 	private void initializeCaptureConfiguration(final Bundle savedInstanceState) {
