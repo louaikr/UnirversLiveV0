@@ -22,6 +22,11 @@ public class HomeActivity extends Activity {
         Intent loginscreen = new Intent(this, LoginActivity.class);
         startActivity(loginscreen);
     }
+
+    public void movingTosignup(View view) {
+        Intent signupscreen = new Intent(this, SignupActivity.class);
+        startActivity(signupscreen);
+    }
 }
 
 

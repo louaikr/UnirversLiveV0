@@ -59,7 +59,9 @@
         android:layout_alignTop="@+id/btnlogin"
         android:layout_alignEnd="@+id/editText3"
         android:background="@drawable/backwithborder"
-        android:textColor="#ffffffff" />
+        android:textColor="#ffffffff"
+        android:onClick="movingTosignup"
+        />
 
     <Button
         style="?android:attr/buttonStyleSmall"

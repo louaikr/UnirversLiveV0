@@ -71,10 +71,10 @@
         android:visibility="gone" />
 
     <ZoomControls
-        android:id="@+id/zoomControls1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="80dp"
+        android:id="@+id/CAMERA_ZOOM_CONTROLS"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
